@@ -15,7 +15,7 @@ encerrar() {
 
 #Nosso encapsulamento de segurança, onde caso passe-se algum argumento, o script evoca a função encerrar e encerrar mostrando o erro.
 if [[ $# -gt 0 ]]; then
-	encerrar "Não passe argumentos neste script." "${NAO_PASSAR_ARGUMENTOS}"
+	encerrar "Não passe argumentos neste script." 
 else
 
 #Variaveis que vão pega o ano, mês e dia, nota-se que o mês estamos pegando a sigla com o comando cut.
