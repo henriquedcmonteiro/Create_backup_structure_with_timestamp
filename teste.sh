@@ -51,7 +51,7 @@ fi
 #Clonamos um repositório meu como exemplo dentro dessa estrutura de arvore de pastas entretanto ainda fora da pasta _backup.
 #Com o comando mv utilizando o command substitution, usamos basename para pegar o nome da pasta do repositório e movemos
 #para a pasta criada anteriormente direcionada pela variável $path que salvou o valor anteriormente do mkdir. 
-criar_arquivo() {
+criar_backup() {
 	mkdir $(date +"%Y-%m-%dT%H:%M:%S_backup")
 	path=$_
 	git clone "https://github.com/henriquedcmonteiro/special_shell_variables" 
@@ -59,7 +59,7 @@ criar_arquivo() {
 }
 
 #Por ultimo executamos a função e saimos do script
-criar_arquivo
+criar_backup
 
 fi
 
